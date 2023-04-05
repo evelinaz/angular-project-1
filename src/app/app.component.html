@@ -1,2 +1,15 @@
-<h1>POOD</h1>
-<div *ngFor="let kass of koikKassid" class="toode">{{ kass.nimi }}</div>
+<h1>BMI calculator</h1>
+
+<h1>Angular Router</h1>
+<nav>
+  <a
+    routerLink="/about-us"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    >About Us</a
+  >
+  <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >Home Page</a
+  >
+</nav>
+<router-outlet></router-outlet>

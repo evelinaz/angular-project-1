@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', // html tagi nimi nagu div. mujal html failides saan kasutada <app-root></app-root>
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class MinuAlgusKomponent {
   title = 'angular-project-1';
 
   koikKassid = [
-		{ nimi: 'Puss', hind: 5, värv: 'must', pildiURL: '/mustkass.webp' },
+		{ nimi: 'Kit', hind: 5, värv: 'must', pildiURL: '/mustkass.webp' },
 		{ nimi: 'Boots', hind: 10, värv: 'valge', pildiURL: '/valgekass.webp' },
 		{ nimi: 'Funny', hind: 20, värv: 'must', pildiURL: '/mustkass.webp' },
 		{ nimi: 'Bunny', hind: 25, värv: 'valge', pildiURL: '/valgekass.webp' },

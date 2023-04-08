@@ -1,0 +1,9 @@
+<h1>Enter your weight</h1>
+<input type="number" [(ngModel)]="weight" />
+
+<h1>Enter your height</h1>
+<input type="number" [(ngModel)]="height" />
+
+<h2>Your BMI result is: {{ getBMI() | number : "1.2-2" }}</h2>
+
+<h2>{{ BMIResult() }}</h2>

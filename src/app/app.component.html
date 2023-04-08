@@ -1,6 +1,7 @@
+<app-header>Hi</app-header>
 <h1>BMI calculator</h1>
 
-<h1>Angular Router</h1>
+<h1 (click)="onClick()">{{ title }}</h1>
 <nav>
   <a
     routerLink="/about-us"
@@ -10,6 +11,19 @@
   >
   <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"
     >Home Page</a
+  >
+
+  <a
+    routerLink="/bmi-page"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    >BMI Page</a
+  >
+  <a
+    routerLink="/counter-page"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    >Counter Page</a
   >
 </nav>
 <router-outlet></router-outlet>

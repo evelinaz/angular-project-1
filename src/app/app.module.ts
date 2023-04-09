@@ -10,12 +10,14 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BMIPageComponent } from './bmipage/bmipage.component';
 import { CounterPageComponent } from './counter-page/counter-page.component';
+import { ToDoPageComponent } from './to-do-page/to-do-page.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'about-us', component: AboutPageComponent },
   { path: 'bmi-page', component: BMIPageComponent },
   { path: 'counter-page', component: CounterPageComponent },
+  { path: 'to-do-page', component: ToDoPageComponent },
 ];
 
 @NgModule({
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     BMIPageComponent,
     CounterPageComponent,
+    ToDoPageComponent,
   ],
   imports: [
     BrowserModule,

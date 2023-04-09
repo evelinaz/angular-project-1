@@ -1,0 +1,15 @@
+<h1>Task List</h1>
+
+<ul>
+  <li *ngFor="let asi of taskList">
+    {{ asi }}
+    <button (click)="removeTaskButtonClick(asi)">Remove task</button>
+    <div style="margin: 10px">removeTaskButtonClick('{{ asi }}')</div>
+  </li>
+
+  <!-- let asi - saan ise nimetada ükskõik kuidas, et saaksin refereerida taskile listis. -->
+</ul>
+<br />
+
+<input type="text" [(ngModel)]="task" />
+<button (click)="addTaskButtonClick()">Add task</button> <br />
